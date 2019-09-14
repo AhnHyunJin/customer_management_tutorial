@@ -1,3 +1,6 @@
+## Management System
+본 프로젝트는 nodejs 와 react를 활용한 고객 관리 프로그램 예제입니다.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
