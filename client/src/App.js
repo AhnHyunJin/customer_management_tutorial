@@ -11,6 +11,7 @@ import {withStyles} from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import CustomerAdd from 'components/CustomerAdd'
 
+
 const styles = theme =>({
 	root:{
 		width: '100%',
@@ -81,6 +82,7 @@ class App extends Component{
 						<TableCell>생년월일</TableCell>
 						<TableCell>성별</TableCell>
 						<TableCell>직업</TableCell>
+						<TableCell>설정</TableCell>
 					</TableRow>
 				</TableHead>
           	<TableBody>
@@ -88,6 +90,7 @@ class App extends Component{
           		this.state.customers.map(c => {
             		return (
 						<Customer
+						stateRefresh = {this.stateRefresh}
 						key={c.id}
 						id={c.id}
 						image={c.image}
